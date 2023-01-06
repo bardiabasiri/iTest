@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* background was provided through https://heropatterns.com/ */
+    background-color: #f7ead0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fac8b4' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    color: rgb(243, 134, 55);
+    font-family: outfit;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quoteContainer {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 5px 5px 5px rgba(238, 138, 138, 0.2);
+}
+
+.quoteText{
+    font-size: 1.2rem;
+}
+.quoteLong {
+    font-size: 1.0rem;
+}
+.fa-quote-left {
+    font-size: 0.9rem;
+}
+.fa-quote-right {
+    font-size: 0.9rem;
+}
+.quoteAuthor {
+    margin-top: 6px;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(237, 115, 8, 0.904);
+}
+
+.buttonContainer {
+    margin-top: 0.9px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 0.8rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    color: rgb(243, 134, 55);
+    background-color: rgba(187, 76, 59, 0.229);
+    outline: none;
+    padding: 0.25rem 1rem;
+    box-shadow: 0 0.15rem rgba(224, 126, 7, 0.86);
+}
+button:hover {
+    filter:brightness(200%);
+}
+button:active {
+    transform: translate(0., 0.3rem);
+    box-shadow: 0 0.1rem rgba(241, 21, 5, 0.86)
+}
+.twitterButton:hover {
+    color: #38a1f3
+}
+.fa-twitter {
+    font-size: 1rem;
+}
+
+/* Media Quert: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    .quoteContainer {
+        margin: auto 10px;
+    }
+    .quoteText {
+        font-size: 0.9rem;
+    }
+}
